@@ -1,0 +1,11 @@
+--- # Open the ProfanityFilter CI at https://poggit.pmmp.io/ci/ReinfyTeam/ProfanityFilter
+build-by-default: true
+branches:
+- main
+projects:
+  ExamplePlugin:
+    path: ""
+    libs:
+      - src: ReinfyTeam\libpf\ProfanityFilter
+        version: ^0.0.4
+...
