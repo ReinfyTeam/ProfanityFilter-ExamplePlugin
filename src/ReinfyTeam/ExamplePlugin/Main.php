@@ -20,7 +20,7 @@ class Main extends PluginBase implements Listener{
             $event->cancel(); // cancel the event
             $event->getPlayer()->sendMessage(TextFormat::RED . "Please watch your language!");
         } else {
-            $event->setMessage(libpf::removeUnicode(libpf::removeProfanity($event->getMessage()), true)); // remove profanity + remove unicodes (bypasses)
+            $event->setMessage(libpf::removeUnicode(libpf::removeProfanity($event->getMessage(), libpf::defaultProfanity(), "*"), true)); // remove profanity + remove unicodes (bypasses)
         }
     }
 }
