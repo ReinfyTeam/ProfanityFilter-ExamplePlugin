@@ -6,6 +6,6 @@ projects:
   ExamplePlugin:
     path: ""
     libs:
-      - src: ReinfyTeam\libpf\libpf
+      - src: ReinfyTeam/libpf/libpf
         version: ^0.0.4
 ...
